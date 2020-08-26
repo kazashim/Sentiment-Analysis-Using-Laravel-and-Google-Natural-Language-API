@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class ExmpController extends Controller
 {
+     public function sentiment()
+    {
     $cloud = new ServiceBuilder([
         'keyFilePath' => base_path('gc.json'),
         'projectId' => 'sample-207012'
@@ -20,5 +22,6 @@ class ExmpController extends Controller
     $sentiment = $annotation->sentiment();
 
     echo 'Sentiment Score: ' .$sentiment['score'] . ', Magnitude: ' . $sentiment['magnitude'];
+    }
 
 }
