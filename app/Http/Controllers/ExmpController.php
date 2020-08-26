@@ -13,7 +13,7 @@ class ExmpController extends Controller
         'projectId' => 'sample-207012'
     ]);
     
-    $languege = $cloud->language->();
+    $languege = $cloud->language();
         //this is the text to analise
     $text = 'I hat this - why did they not make provisions?';
 
