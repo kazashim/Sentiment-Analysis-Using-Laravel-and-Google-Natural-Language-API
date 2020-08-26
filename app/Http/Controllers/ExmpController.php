@@ -10,4 +10,7 @@ class ExmpController extends Controller
         'keyFilePath' => base_path('gc.json'),
         'projectId' => 'sample-207012'
     ]);
+
+    $languege = $cloud->language->();
+    
 }
