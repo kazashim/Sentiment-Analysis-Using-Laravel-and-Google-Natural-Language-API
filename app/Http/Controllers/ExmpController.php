@@ -19,6 +19,6 @@ class ExmpController extends Controller
     $annotation = $languege->analyzeStatment($text);
     $sentiment = $annotation->sentiment();
 
-    echo 'Sentiment Score: ' .$s
+    echo 'Sentiment Score: ' .$sentiment['score'] . ', Magnitude: ' . $sentiment['magnitude'];
 
 }
