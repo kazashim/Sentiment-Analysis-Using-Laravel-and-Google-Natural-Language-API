@@ -9,8 +9,8 @@ class ExmpController extends Controller
      public function sentiment()
     {
     $cloud = new ServiceBuilder([
-        'keyFilePath' => base_path('gc.json'),
-        'projectId' => 'sample-207012'
+        'keyFilePath' => base_path('cynsentement.json'),
+        'projectId' => 'cyn-207012'
     ]);
     
     $languege = $cloud->language();
