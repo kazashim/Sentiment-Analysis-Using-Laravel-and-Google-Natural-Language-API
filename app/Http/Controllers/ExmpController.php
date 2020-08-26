@@ -12,5 +12,8 @@ class ExmpController extends Controller
     ]);
 
     $languege = $cloud->language->();
+
+    $text = 'I hat this - why did they not make provisions?';
+
     
 }
