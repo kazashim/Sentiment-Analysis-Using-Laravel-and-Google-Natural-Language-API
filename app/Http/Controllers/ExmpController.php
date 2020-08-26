@@ -15,5 +15,5 @@ class ExmpController extends Controller
 
     $text = 'I hat this - why did they not make provisions?';
 
-    
+    $annotation = $languege->analyzeStatment($text);
 }
